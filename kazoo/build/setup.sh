@@ -6,7 +6,6 @@ then
 fi
 
 # REPO is global and must be defined on build
-##git clone $REPO kazoo
 chown user.user  kazoo
 
 . erlang/activate

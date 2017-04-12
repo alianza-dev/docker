@@ -23,7 +23,6 @@ COPY etc/commit /home/user/commit
 COPY build/setup.sh build/setup.sh
 RUN build/setup.sh
 
-COPY etc/config.ini config.ini
 COPY build/run.sh run.sh
 ENTRYPOINT ./run.sh
 
