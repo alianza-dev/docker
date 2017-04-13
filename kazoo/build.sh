@@ -6,7 +6,7 @@ PROD_BUILD=${PROD_BUILD:-""}
 UID=$(id -u)
 GID=$(id -g)
 
-if [ -z $SKIP_CLONE ]
+if [ ! -d repo/kazoo ]
 then
 echo "git clone"
 git clone $REPO repo/kazoo
