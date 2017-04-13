@@ -2,7 +2,7 @@
 REPO=${2:-"https://github.com/alianza-dev/alz-kazoo.git"}
 #COMMIT=${1:-"$(../bin/get-commit $REPO)"}
 SKIP_BUILD=${SKIP_BUILD:-""}
-PROD_BUILD=${PROD_BUILD:-""}
+PROD_BUILD=${PROD_BUILD:-"1"}
 UID=$(id -u)
 GID=$(id -g)
 
