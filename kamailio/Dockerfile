@@ -25,8 +25,7 @@ RUN ./configure.sh
 COPY build/build.sh build/build.sh
 RUN build/build.sh
 
-COPY build/setup-config.sh build/setup-config.sh
-RUN build/setup-config.sh
+COPY etc/kazoo-configs kazoo-configs
 
 COPY build/install.sh install.sh
 RUN ./install.sh
