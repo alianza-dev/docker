@@ -1,5 +1,4 @@
 #!/bin/sh -e
-NETWORK=${NETWORK:-"kazoo"}
 REPO=${2:-"https://github.com/alianza-dev/alz-kazoo.git"}
 #COMMIT=${1:-"$(../bin/get-commit $REPO)"}
 SKIP_BUILD=${SKIP_BUILD:-""}
@@ -20,7 +19,7 @@ fi
 
 echo Using repository $REPO commit $COMMIT
 echo $COMMIT > etc/commit
-docker build $BUILD_FLAGS -t $NETWORK/kazoo \
+docker build $BUILD_FLAGS -t kazoo/kazoo \
 	--build-arg REPO=$REPO \
 	--build-arg SKIP_BUILD=$SKIP_BUILD \
 	--build-arg PROD_BUILD=$PROD_BUILD \
