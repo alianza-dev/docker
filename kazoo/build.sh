@@ -1,5 +1,5 @@
 #!/bin/sh -e
-REPO=${2:-"https://github.com/alianza-dev/alz-kazoo.git"}
+REPO=${2:-"git@github.com:alianza-dev/alz-kazoo.git"}
 #COMMIT=${1:-"$(../bin/get-commit $REPO)"}
 SKIP_BUILD=${SKIP_BUILD:-""}
 PROD_BUILD=${PROD_BUILD:-"1"}
