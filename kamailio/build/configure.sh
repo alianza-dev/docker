@@ -48,6 +48,10 @@ usrloc \
 uuid \
 websocket \
 xhttp \
+cfg_rpc \
+cfgutils \
+nat_traversal \
+corex \
 xlog"
 
 EXCLUDE_MODULES="alias_db \
@@ -62,10 +66,7 @@ benchmark \
 blst \
 call_control \
 cfg_db \
-cfg_rpc \
 cfgt \
-cfgutils \
-corex \
 counters \
 db2_ops \
 db_cluster \
@@ -93,7 +94,6 @@ mqueue \
 msilo \
 msrp \
 mtree \
-nat_traversal \
 nosip \
 pdb \
 pdt \
