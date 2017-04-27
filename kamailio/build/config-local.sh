@@ -12,6 +12,10 @@ MY_IP=$(hostname -i)
 # rabbitmq
 /bin/sed -i "s/MY_AMQP_URL!.*!/MY_AMQP_URL!kazoo:\/\/guest:guest@$RABBITMQ:5672!/g" $LOCAL
 
+/bin/sed -i "s/MY_AMQP_SECONDARY_URL!.*!/MY_AMQP_SECONDARY_URL!kazoo:\/\/guest:guest@$RABBITMQ_SECONDARY:5672!/g" $LOCAL
+
+/bin/sed -i "s/MY_AMQP_TERTIARY_URL!.*!/MY_AMQP_TERTIARY_URL!kazoo:\/\/guest:guest@$RABBITMQ_TERTIARY:5672!/g" $LOCAL
+
 # advertise
 if [ ! -z "$EXT_IP" ]
 then
