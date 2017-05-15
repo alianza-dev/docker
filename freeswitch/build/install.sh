@@ -6,6 +6,7 @@ groupadd freeswitch
 
 adduser --disabled-password  --quiet --system --home /usr/local/freeswitch --ingroup freeswitch freeswitch
 
+# @TODO do we need the sounds?
 git clone --depth 1 --no-single-branch https://github.com/2600hz/kazoo-sounds
 cp -a kazoo-sounds/freeswitch /usr/local/freeswitch/sounds
 

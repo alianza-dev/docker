@@ -18,7 +18,6 @@ docker run $FLAGS \
 	--net $NETWORK \
 	-h $NAME \
 	--name $NAME \
-	--env RABBITMQ=${RABBITMQ:-"rabbitmq.$NETWORK"} \
 	$IMAGE
 
 echo -n "adding dispatcher $NAME to kamailio $KAMAILIO "
